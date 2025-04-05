@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motion Detector</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motion Detector</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Motion Detector</h1>
-    <video id="video" autoplay></video>
-    <canvas id="canvas"></canvas>
-    <audio id="alertSound" src="alert.mp3"></audio> <!-- Add your sound file -->
+  <div class="container">
+    <h1>📹 Motion Detector</h1>
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas" style="display: none;"></canvas>
 
-    <script src="script.js"></script>
+    <div class="controls">
+      <button id="startBtn">▶ Start Detecting</button>
+      <button id="stopBtn">⏹ Stop Detecting</button>
+      <button id="toggleCameraBtn">🔄 Switch Camera</button>
+    </div>
+
+    <audio id="alertSound" src="alert.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
